@@ -1,6 +1,6 @@
 ﻿using FellesEntiteter;
 
-namespace oppgave1;
+namespace oppgave1.løsning;
 
 class Program
 {
@@ -12,16 +12,13 @@ class Program
         var brukerId = "1";
 
         var person = HentPersonMedId(brukerId);
-        // Skal printe ut
-        // "Roy Roysen har personId 1"
         Console.WriteLine(person.ToString());
     }
 
 
     private static Person HentPersonMedId(string id)
     {
-        // TODO: implementer denne ved å filtrere listen allePersoner med bruk av .Where og .First
-        return ????
+        return allePersoner.Where(person => person.Id == id).First();
     }
 
 
