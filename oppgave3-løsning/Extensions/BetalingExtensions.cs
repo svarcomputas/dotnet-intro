@@ -1,6 +1,6 @@
 ﻿using FellesEntiteter;
 
-namespace oppgave4.løsning.Extensions
+namespace oppgave3.løsning.Extensions
 {
     public static class BetalingExtensions
     {
@@ -16,9 +16,10 @@ namespace oppgave4.løsning.Extensions
             };
         }
 
-        public static double SummerPåType(this List<Betaling> betalinger, BetalingsType type)
-            => betalinger
+        public static double SummerPåType(this List<Betaling> betalinger, BetalingsType type){
+            return betalinger
                 .Where(betaling => betaling.BetalingsType == type)
                 .Select(betaling => betaling.Beløp).Sum();
+        }
     }
 }

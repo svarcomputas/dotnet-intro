@@ -2,7 +2,7 @@
 
 public class Betaling
 {
-    public Guid PersonBetalingsId { get; set; }
+    public string? PersonId { get; set; } = default!;
 
     public BetalingsType BetalingsType { get; set; }
 

@@ -1,11 +1,12 @@
 ﻿using FellesEntiteter;
-using oppgave1.Database;
+using oppgave4.Database;
 
-namespace oppgave1.Repositories;
+namespace oppgave4.Repository;
 
 public interface IPersonRepository
 {
-    public Person HentPersonMedId(string Id);
+    // TODO: implementer interfacet (hint: se på interfacet i IPersonService)
+    ??
 }
 
 public class PersonRepository : IPersonRepository

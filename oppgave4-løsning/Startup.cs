@@ -1,9 +1,9 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using oppgave1.Database;
-using oppgave1.Repositories;
-using oppgave1.Services;
+using oppgave4.løsning.Database;
+using oppgave4.løsning.Repository;
+using oppgave4.løsning.Service;
 
-namespace oppgave1;
+namespace oppgave4.løsning;
 
 public static class Startup
 {

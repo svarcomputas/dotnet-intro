@@ -1,20 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace FellesEntiteter;
+﻿namespace FellesEntiteter;
 
 public class Person
 {
-    public string Id { get; set; }
+    public string Id { get; set; } = default!;
 
-    public string Fornavn { get; set; }
+    public string Fornavn { get; set; } = default!;
 
-    public string Etternavn { get; set; }
-
-    public Guid BetalingsId { get; set; }
+    public string Etternavn { get; set; } = default!;
 
     public override string ToString()
     {

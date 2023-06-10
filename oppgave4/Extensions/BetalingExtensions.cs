@@ -1,6 +1,6 @@
 ﻿using FellesEntiteter;
 
-namespace oppgave4.løsning.Extensions
+namespace oppgave4.Extensions
 {
     public static class BetalingExtensions
     {

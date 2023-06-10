@@ -1,11 +1,12 @@
 ﻿using FellesEntiteter;
-using oppgave1.Database;
+using oppgave4.Database;
 
-namespace oppgave1.Repositories;
+namespace oppgave4.Repository;
 
 public interface IBetalingsRepository
 {
-    public List<Betaling> HentBetalingerForPersonMedId(Guid personId);
+    // TODO: implementer interfacet (hint: se på interfacet i IPersonService)
+    ?? 
 }
 
 public class BetalingsRepository : IBetalingsRepository
@@ -17,8 +18,8 @@ public class BetalingsRepository : IBetalingsRepository
         _alleBetalinger = database.HentAlleBetalinger();
     }
 
-    public List<Betaling> HentBetalingerForPersonMedId(Guid personId)
+    public List<Betaling> HentBetalingerForPersonMedId(string personId)
     {
-        return _alleBetalinger.Where(betaling => betaling.PersonBetalingsId == personId).ToList();
+        return _alleBetalinger.Where(betaling => betaling.PersonId == personId).ToList();
     }
 }

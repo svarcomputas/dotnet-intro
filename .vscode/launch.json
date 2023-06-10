@@ -8,18 +8,129 @@
             "name": "Oppgave1-løsning",
             "type": "coreclr",
             "request": "launch",
-            "preLaunchTask": "build",
+            "preLaunchTask": "buildoppgave1løsning",
             "program": "${workspaceFolder}/oppgave1-løsning/bin/Debug/net7.0/oppgave1-løsning.dll",
             "args": [],
             "cwd": "${workspaceFolder}/oppgave1-løsning",
             "console": "internalConsole",
             "stopAtEntry": false,
-            "requireExactSource": false
+            "requireExactSource": false,
+            "logging": {
+                "moduleLoad": false,
+                "processExit": false
+            }
         },
         {
-            "name": ".NET Core Attach",
+            "name": "Oppgave1",
             "type": "coreclr",
-            "request": "attach"
+            "request": "launch",
+            "preLaunchTask": "buildoppgave1",
+            "program": "${workspaceFolder}/oppgave1/bin/Debug/net7.0/oppgave1.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/oppgave1",
+            "console": "internalConsole",
+            "stopAtEntry": false,
+            "requireExactSource": false,
+            "logging": {
+                "moduleLoad": false,
+                "processExit": false
+            }
+        },
+        {
+            "name": "Oppgave2-løsning",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "buildoppgave2løsning",
+            "program": "${workspaceFolder}/oppgave2-løsning/bin/Debug/net7.0/oppgave2-løsning.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/oppgave2-løsning",
+            "console": "internalConsole",
+            "stopAtEntry": false,
+            "requireExactSource": false,
+            "logging": {
+                "moduleLoad": false,
+                "processExit": false
+            }
+        },
+        {
+            "name": "Oppgave2",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "buildoppgave2",
+            "program": "${workspaceFolder}/oppgave2/bin/Debug/net7.0/oppgave2.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/oppgave2",
+            "console": "internalConsole",
+            "stopAtEntry": false,
+            "requireExactSource": false,
+            "logging": {
+                "moduleLoad": false,
+                "processExit": false
+            }
+        },
+        {
+            "name": "Oppgave3-løsning",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "buildoppgave3løsning",
+            "program": "${workspaceFolder}/oppgave3-løsning/bin/Debug/net7.0/oppgave3-løsning.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/oppgave3-løsning",
+            "console": "internalConsole",
+            "stopAtEntry": false,
+            "requireExactSource": false,
+            "logging": {
+                "moduleLoad": false,
+                "processExit": false
+            }
+        },
+        {
+            "name": "Oppgave3",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "buildoppgave3",
+            "program": "${workspaceFolder}/oppgave3/bin/Debug/net7.0/oppgave3.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/oppgave3",
+            "console": "internalConsole",
+            "stopAtEntry": false,
+            "requireExactSource": false,
+            "logging": {
+                "moduleLoad": false,
+                "processExit": false
+            }
+        },
+        {
+            "name": "Oppgave4-løsning",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "buildoppgave4løsning",
+            "program": "${workspaceFolder}/oppgave4-løsning/bin/Debug/net7.0/oppgave4-løsning.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/oppgave4-løsning",
+            "console": "internalConsole",
+            "stopAtEntry": false,
+            "requireExactSource": false,
+            "logging": {
+                "moduleLoad": false,
+                "processExit": false
+            }
+        },
+        {
+            "name": "Oppgave4",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "buildoppgave4",
+            "program": "${workspaceFolder}/oppgave4/bin/Debug/net7.0/oppgave4.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/oppgave4",
+            "console": "internalConsole",
+            "stopAtEntry": false,
+            "requireExactSource": false,
+            "logging": {
+                "moduleLoad": false,
+                "processExit": false
+            }
         }
     ]
 }

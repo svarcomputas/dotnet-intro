@@ -1,12 +1,12 @@
 ﻿using FellesEntiteter;
-using oppgave1.Extensions;
-using oppgave1.Repositories;
+using oppgave4.løsning.Extensions;
+using oppgave4.løsning.Repository;
 
-namespace oppgave1.Services;
+namespace oppgave4.løsning.Service;
 
 public interface IPersonService
 {
-    public BetalingsOppsummering HentBetalingsoppsummering(string personId); 
+    public PersonBetalingsOppsummering HentPersonBetalingsoppsummering(string personId); 
 }
 
 public class PersonService : IPersonService
@@ -20,11 +20,15 @@ public class PersonService : IPersonService
         _betalingsRepository = betalingsRepository;
     }
 
-    public BetalingsOppsummering HentBetalingsoppsummering(string personId)
+    public PersonBetalingsOppsummering HentPersonBetalingsoppsummering(string personId)
     {
         var person = _personRepository.HentPersonMedId(personId);
-        var betalinger = _betalingsRepository.HentBetalingerForPersonMedId(person.BetalingsId);
+        var betalinger = _betalingsRepository.HentBetalingerForPersonMedId(personId);
         var oppsummering = betalinger.TilOppsummeringForSisteXDager(30);
-        return oppsummering;
+        return new PersonBetalingsOppsummering
+        {
+            Person = person,
+            BetalingsOppsummering = oppsummering
+        };
     }
 }
