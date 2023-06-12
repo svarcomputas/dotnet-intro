@@ -1,4 +1,5 @@
-﻿using FellesEntiteter;
+﻿using System;
+using FellesEntiteter;
 
 namespace oppgave3.Extensions
 {
