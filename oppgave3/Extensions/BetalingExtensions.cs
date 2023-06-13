@@ -15,15 +15,10 @@ namespace oppgave3.Extensions
             return new BetalingsOppsummering()
             {
                 SisteDager = dager,
-                TotaltInnPåKontoer = betalingerSistDager.SummerPåType(BetalingsType.InnPåKontoer),
-                TotaltUtFraKontoer = betalingerSistDager.SummerPåType(BetalingsType.UtFraKontoer),
-                TotaltOverførtEgneKontoer = betalingerSistDager.SummerPåType(BetalingsType.OverføringEgneKontoer)
+                TotaltInnPåKontoer = ,// TODO: summer alle betalingerSistDager som er av typen InnPåKontoer,
+                TotaltUtFraKontoer = ,// TODO: summer alle betalingerSistDager som er av typen UtAvKontoer,
+                TotaltOverførtEgneKontoer = ,// TODO: summer alle betalingerSistDager som er av typen OverføringEgneKontoer,
             };
-        }
-
-        // TODO: implementer denne hjelpefunksjonen ved bruk av .Where, .Select og .Sum
-        public static double SummerPåType(this List<Betaling> betalinger, BetalingsType type){
-            return ?????
         }
     }
 }
