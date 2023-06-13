@@ -5,7 +5,7 @@ namespace oppgave4.Repository;
 
 public interface IPersonRepository
 {
-    // TODO: implementer interfacet (hint: se på interfacet i IPersonService)
+    // TODO: Legg til funksjonen  HentPersonMedId(string Id) på interfacet (hint: se på interfacet i IPersonService)
     ??
 }
 
